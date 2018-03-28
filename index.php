@@ -50,9 +50,7 @@
 	echo $aluno;
 
 	---------------------------------------------------
-	**/
-
-
+	
 	//atualizando novo usuario
 	$usuario = new Usuario();
 
@@ -62,6 +60,17 @@
 
 	echo $usuario;
 
+	---------------------------------------------------
+	
+	**/
+	//deleta dados do usuario
 
+	$usuario = new Usuario();
+
+	$usuario->loadbyId(5);
+
+	$usuario->delete();
+
+	echo $usuario;
 
  ?>
